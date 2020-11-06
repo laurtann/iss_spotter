@@ -21,8 +21,8 @@ const nextISSTimesForMyLocation = function() {
     .then(fetchCoordsByIP)
     .then(fetchISSFlyOverTimes)
     .then((data) => {
-      const { passTimes } = JSON.parse(data);
-      return passTimes;
+      const passTimes = JSON.parse(data);
+      return passTimes.response
     });
 };
 
