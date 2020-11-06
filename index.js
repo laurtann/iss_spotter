@@ -4,7 +4,7 @@ nextISSTimesForMyLocation((error, passTimes) => {
   if (error) {
     return console.log("It didn't work!", error);
   }
-  // console.log(passTimes);
+  printPassTimes(passTimes);
 });
 
 const printPassTimes = function(passTimes) {
@@ -16,11 +16,11 @@ const printPassTimes = function(passTimes) {
   }
 };
 
-printPassTimes([ { duration: 443, risetime: 1604715794 },
-  { duration: 644, risetime: 1604721457 },
-  { duration: 640, risetime: 1604727272 },
-  { duration: 619, risetime: 1604733126 },
-  { duration: 646, risetime: 1604738953 } ]);
+// printPassTimes([ { duration: 443, risetime: 1604715794 },
+//   { duration: 644, risetime: 1604721457 },
+//   { duration: 640, risetime: 1604727272 },
+//   { duration: 619, risetime: 1604733126 },
+//   { duration: 646, risetime: 1604738953 } ]);
 
 // printPassTimes(test);
 
